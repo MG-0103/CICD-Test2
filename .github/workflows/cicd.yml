@@ -1,0 +1,11 @@
+name: cicd
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  my-job:
+    uses: MG-0103/CICD-Test/.github/workflows/cicd.yml@feature/github_actions
+    with:
+      python-version: "3.13"
