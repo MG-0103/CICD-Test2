@@ -6,6 +6,11 @@ on:
 
 jobs:
   my-job:
+    permissions: 
+      contents: write
+      pages: write
+      id-token: write
+    
     uses: MG-0103/CICD-Test/.github/workflows/cicd.yml@feature/github_actions
     with:
       python-version: "3.13"
